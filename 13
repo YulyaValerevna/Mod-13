@@ -1,0 +1,13 @@
+number_bilet = int (input("Введите количество билетов"))
+summa = 0
+for i in range(number_bilet):
+    age = int(input('Введите возраст посетителей:'))
+    if age < 18:
+        summa = 0
+    elif 18 <= age < 25:
+        summa += 990
+    elif age >25:
+        summa += 1390
+if number_bilet >=3:
+    summa = summa * 0.9
+print(summa)
